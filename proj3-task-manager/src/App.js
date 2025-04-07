@@ -1,9 +1,9 @@
 import {HashRouter,Routes,Route} from "react-router-dom"
-import Home from "./components/Home";
-import Footeer from "./components/Footer.";
+import Home from "./components/Home"
 import Header from "./components/Header";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Contact from "./components/ContactUs";
 import About from "./components/About"
 
 
@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <HashRouter>
-        <Navbar/>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/about" element={<About/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/About" element={<About/>}/>
         </Routes>
       </HashRouter>
 

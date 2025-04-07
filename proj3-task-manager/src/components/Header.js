@@ -1,9 +1,9 @@
-import { link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-const Header = (props) => {
+const Header = ( { title } ) => {
     return (
         <>
-        <p>{props.title}</p>
+        <h1> { title } </h1>
         </>
     )
 }
